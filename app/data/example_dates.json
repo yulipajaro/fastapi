@@ -1,0 +1,248 @@
+[
+    {
+        "date": "01/10/2023",
+        "data": [
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1236,
+                "codigo_sic": 2,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 12367,
+                "codigo_sic": 3,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 2",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            }
+        ]
+    },
+    {
+        "date": "02/10/2023",
+        "data": [
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1236,
+                "codigo_sic": 2,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 12367,
+                "codigo_sic": 3,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 2",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            }
+        ]
+    },
+    {
+        "date": "02/10/2023",
+        "data": [
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1236,
+                "codigo_sic": 2,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 12367,
+                "codigo_sic": 3,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 2",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            }
+        ]
+    },
+    {
+        "date": "05/10/2023",
+        "data": [
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1236,
+                "codigo_sic": 2,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 12367,
+                "codigo_sic": 3,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 2",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            }
+        ]
+    },
+    {
+        "date": "05/10/2023",
+        "data": [
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1236,
+                "codigo_sic": 2,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 12367,
+                "codigo_sic": 3,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 2",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            }
+        ]
+    },
+    {
+        "date": "06/10/2023",
+        "data": [
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1236,
+                "codigo_sic": 2,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 12367,
+                "codigo_sic": 3,
+                "city": "ciudad 1",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            },
+            {
+                "nit": 1234,
+                "codigo_sic": 1,
+                "city": "ciudad 2",
+                "consume_active": 120,
+                "consume_penalized": 1,
+                "total_active": 120123,
+                "total_penalized": 120123
+            }
+        ]
+    }
+]
