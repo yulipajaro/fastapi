@@ -1,9 +1,8 @@
-
 fly.toml
 
-**\.env
-**\.venv
-**\env
-**\venv
+**/.env
+**/.venv
+**/env
+**/venv
 
-**\__pycache__
+**/__pycache__
