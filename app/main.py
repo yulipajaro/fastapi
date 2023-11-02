@@ -19,3 +19,8 @@ def read_item(item_id: int, q: Union[str, None] = None):
 @app.get("/example_dates")
 def get_example_dates():
     return FileResponse('data/example_dates.json')
+
+
+@app.get("/list_nit")
+def get_list_nit():
+    return FileResponse('data/list_nit.json')
