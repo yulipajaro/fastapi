@@ -9,7 +9,7 @@ docker build -t fastapi .
 ```
 
 ```bash
-docker run -d --name fastapi_container -p 8002:8002 fastapi
+docker run -d --name fastapi_container -p 8002:8080 fastapi
 ```
 
 ## Test
