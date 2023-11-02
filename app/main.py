@@ -6,6 +6,8 @@ from starlette.responses import FileResponse
 
 app = FastAPI()
 
+current_dir = os.path.dirname(os.path.realpath(__file__))
+
 
 @app.get("/")
 def read_root():
@@ -19,9 +21,11 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 @app.get("/example_dates")
 def get_example_dates():
-    return FileResponse('data/example_dates.json')
+    dates_path = os.path.join(current_dir, 'data', 'example_dates.json')
+    return FileResponse(dates_path)
 
 
 @app.get("/list_nit")
 def get_list_nit():
-    return FileResponse('data/list_nit.json')
+    nit_path = os.path.join(current_dir, 'data', 'list_nit.json')
+    return FileResponse(nit_path)
