@@ -1,104 +1,62 @@
-{
-    "8000473593": "Inversiones Reinoso & Cia. Ltda",
-    "8012003651": "BTi Pruebas SA",
-    "900351013": "Enel X Colombia S.A.S. E.S.P.",
-    "9010144460": "COLDLINE SAS",
-    "8110175480": "ESTAMPADOS ESPECIALES SAS",
-    "9013838655": "CENTRO COMERCIAL PASEO VILLA DEL RIO - PROPIEDAD HORIZONTAL",
-    "8300378331": "Plasricos Herson SAS",
-    "9004114501": "COLBOPLAST SAS",
-    "8920024277": "HOTEL DON LOLO LTDA",
-    "8301022163": "PROCESOS Y SERVICIOS SAS",
-    "9011567353": "CARIBE FOOD GROUP S.A.S",
-    "9011258889": "PARQUE COMERCIAL Y RESIDENCIAL VICTORIA - PROPIEDAD HORIZONTAL",
-    "8305063926": "MORANGO S.A.S",
-    "9012496957": "PLAZA LA SERREZUELA S.A.S",
-    "9006875566": "CAUCHOS LOS COMUNEROS SAS",
-    "9002310170": "SURTIPLAST CT S.A.S",
-    "8600015765": "MARCALI SA",
-    "8301090549": "FRUSERVICE S.A.S",
-    "9014089377": "FUNDICIONES GANIMEDES SAS",
-    "9003413224": "METRO OPERACION INMOBILIARIA SAS",
-    "9001709583": "PCC - PROCESADORA COLOMBIANA DE CARNES SAS",
-    "8002252908": "PLASTICOS CALIDAD Y COMPA\u00d1IA LTDA",
-    "9003513607": "MAXTECH S.A.S",
-    "9009893992": "WEWORK COLOMBIA S.A.S.",
-    "8300702845": "RESONANCIA MAGNETICA DEL COUNTRY S.A.",
-    "8300332063": "INVERSIONES EN RECREACION DEPORTE Y SALUD S.A.",
-    "8000173081": "CLINICA LA SABANA S.A.",
-    "8000679559": "RINOPACK S.A.S.",
-    "8600166404": "TCC S.A.S.",
-    "9011328594": "VENTURA TERREROS CENTRO COMERCIAL  PRIMERA ETAPA PROPIEDAD HORIZONTAL",
-    "8600324509": "POLLO FIESTA SA",
-    "9014728023": "Centro Comercial Nuestro Bogota PH",
-    "8301294260": "Woden colombia sas",
-    "9005225084": "INVERSIONES SUPERVAQUITA LA 33 S.A.S.",
-    "9011899717": "PRODUCTOS MANANTIAL SAS",
-    "9001260243": "DISPEZ RIO Y MAR SA",
-    "8000264520": "Didacticos Pinocho SA",
-    "9005276852": "MULTIPLIKA SAS",
-    "8604502347": "INCODEPF S.A.S.",
-    "9007394706": "G KOI S.A.S.",
-    "8604039724": "POLLOS SAVICOL SA",
-    "8909033579": "CARBONES SAN FERNANDO SAS",
-    "8300379463": "PANAMERICANA LIBRERIA Y PAPELERIA SA",
-    "8300658719": "C.I INVERSIONES DALUMA SAS",
-    "8600768201": "POLLO ANDINO SA",
-    "9000792501": "MRT MARTIPLAS SAS",
-    "8240064809": "IMAGEN RADIOLOGICA DIAGNOSTICA SAS",
-    "9001906584": "NYPOL HILOS DE NYLON Y POLIPROPILENO S.A.S",
-    "8002228444": "Radioimagenes Radi\u00f3logos Asociados S.A.S",
-    "9016391231": "Fabrica de Mangueras Saroa S.A.S",
-    "9000165987": "INSTITUTO CARDIOVASCULAR DEL CESAR SA",
-    "8605339556": "TEXTRON SA",
-    "8002502032": "INVERSIONES MAR SAS",
-    "9000488885": "TINTAL PLAZA CENTRO COMERCIAL",
-    "8600717484": "TEXTILES ROMANOS SA",
-    "9000318336": "ALIMENTOS PIPPO SAS",
-    "8240043303": "MEDICINA NUCLEAR S.A.",
-    "8600769191": "CREPES Y WAFFLES S.A.",
-    "8301293271": "FARMATODO COLOMBIA SA",
-    "8600073361": "CAJA COLOMBIANA DE SUBSIDIO FAMILIAR COLSUBSIDIO",
-    "602510211": "ALBA - LUZ COSTERO",
-    "9009976145": "INDUSTRIASPLASTICASYOCOSAS",
-    "9012873891": "CITIPLAS COLOMBIA SAS",
-    "9009432434": "Suramericana",
-    "9003816814": "COPELCOL SAS",
-    "9010456818": "PLASTICOS ECOLOGICAL DE COLOMBIA SAS",
-    "9008745385": "FLEXOPOL SAS",
-    "9005144527": "CARTOFLEX SAS",
-    "8001304263": "GYJ FERRETERIAS SAS",
-    "9000147762": "QUIMICA Y MINERIA INTEGRADAS S.A.",
-    "9002318248": "MERCAPEZ DE COLOMBIA S.A.S",
-    "8001067740": "MERCADOS ZAPATOCA S.A.",
-    "8240006879": "SOCIEDAD DE ONCOLOGIA Y HEMATOLOGIA DEL CESAR S.A.S",
-    "9008115195": "PROYSERVICE SAS",
-    "9011453948": "LOSCOBOS MEDICAL CENTER SAS",
-    "9006654991": "HICO FISH SAS",
-    "8320090088": "LADRILLERA SAN JOAQUIN SAS",
-    "8605098120": "COLOMBO ITALIANA DE CURTIDOS SAS",
-    "8002176867": "FROG DESIGN SAS",
-    "397764660": "RECICLADORA DE PLASTICOS ALTAMAR SAS",
-    "8600259983": "INCAP SA",
-    "8001344974": "AVICOLA MILUC SAS",
-    "9007468840": "CEBARTE SAS",
-    "9004220281": "Colombiana de Escenarios S.A.S.",
-    "9003978390": "COMPA\u00d1IA DSIERRA SAS",
-    "8020049420": "THERMOCOIL LTDA",
-    "8600539667": "FLORES TIBA SA",
-    "8001934446": "ECOLOGIA Y ENTORNO S.A.S. E.S.P. ECOENTORNO",
-    "9005064490": "EDIFICIO T3-CIUDAD EMPRESARIAL SARMIENTO ANGULO - PROPIEDAD HORIZONTAL",
-    "9014896988": "MONTRECITO S.A.S",
-    "8904002460": "INDUSTRIAS DE REFRIGERACION COMERCIAL S.A. INDUFRIAL S.A. \"REORGANIZACION EMPRESARIAL\"",
-    "8600721727": "EMPACOR SA",
-    "8600667896": "UNIVERSIDAD EL BOSQUE",
-    "9012265611": "CLINICA Y CONSULTORIOS LA SABANA - PROPIEDAD HORIZONTAL",
-    "9003510136": "Enel X Colombia S.A.S. ESP.",
-    "8901104161": "INDUSTRIA THERMOTAR",
-    "9009161211": "INDUSTRIA AMBIENTAL SAS",
-    "9013232484": "CL\u00cdNICA SANTA MAR\u00cdA DEL CARIBE S.A.S",
-    "9001246544": "EMSERCOTA SA ESP",
-    "8605119118": "SERIES SAS",
-    "8220009441": "INVERSIONES EL VERGEL LIMITADA (2)",
-    "9011307898": "CI PRODUCTORA INTERNACIONAL DE GRASAS SAS"
-}
+[
+    {
+        "nit": "123456789",
+        "info_int": [
+            {
+                "codigo_sic": "1234",
+                "operador": "operador_1",
+                "municipio": "municipio_1"
+            },
+            {
+                "codigo_sic": "1237",
+                "operador": "operador_1",
+                "municipio": "municipio_1"
+            },
+            {
+                "codigo_sic": "123478",
+                "operador": "operador_2",
+                "municipio": "municipio_2"
+            }
+        ]
+    },
+    {
+        "nit": "9876345",
+        "info_int": [
+            {
+                "codigo_sic": "1234",
+                "operador": "operador_1",
+                "municipio": "municipio_1"
+            },
+            {
+                "codigo_sic": "1237",
+                "operador": "operador_1",
+                "municipio": "municipio_1"
+            },
+            {
+                "codigo_sic": "123478",
+                "operador": "operador_2",
+                "municipio": "municipio_2"
+            }
+        ]
+    },
+    {
+        "nit": "11123523",
+        "info_int": [
+            {
+                "codigo_sic": "1231524",
+                "operador": "operador_3",
+                "municipio": "municipio_1"
+            },
+            {
+                "codigo_sic": "12312",
+                "operador": "operador_1",
+                "municipio": "municipio_1"
+            },
+            {
+                "codigo_sic": "123478",
+                "operador": "operador_2",
+                "municipio": "municipio_2"
+            }
+        ]
+    }
+]
