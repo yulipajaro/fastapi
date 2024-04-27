@@ -1,45 +1,58 @@
 from abc import ABC, abstractmethod
+from datetime import datetime
 
-class EstrategiaDescuento(ABC):
+class MovieTicketDiscountStrategy(ABC):
     @abstractmethod
-    def calcular_descuento(self, precio_base: float) -> float:
+    def apply_discount(self, age: int, is_military: bool, date: datetime) -> float:
         pass
 
-class SinDescuento(EstrategiaDescuento):
-    def calcular_descuento(self, precio_base: float) -> float:
-        return 0.0
-
-class DescuentoEstudiante(EstrategiaDescuento):
-    def calcular_descuento(self, precio_base: float) -> float:
-        return precio_base * 0.2  # Descuento del 20% para estudiantes
-
-class DescuentoNiño(EstrategiaDescuento):
-    def calcular_descuento(self, precio_base: float) -> float:
-        return precio_base * 0.5  # Descuento del 50% para niños
-
-class DescuentoMilitar(EstrategiaDescuento):
-    def calcular_descuento(self, precio_base: float) -> float:
-        return precio_base * 0.3  # Descuento del 30% para militares
-
-class DescuentoDiaSemana(EstrategiaDescuento):
-    def __init__(self, dia_semana: str):
-        self.dia_semana = dia_semana.lower()
-
-    def calcular_descuento(self, precio_base: float) -> float:
-        if self.dia_semana in ['lunes', 'miércoles']:
-            return precio_base * 0.4  # Descuento del 40% para los lunes y miércoles
+class ChildDiscount(MovieTicketDiscountStrategy):
+    def apply_discount(self, age: int, is_military: bool, date: datetime) -> float:
+        if age < 5:
+            return 0.05
         else:
-            return precio_base
+            return 0
 
-class PrecioEntrada:
-    def __init__(self, estrategia_descuento: EstrategiaDescuento):
-        self.estrategia_descuento = estrategia_descuento
+class MilitaryDiscount(MovieTicketDiscountStrategy):
+    def apply_discount(self, age: int, is_military: bool, date: datetime) -> float:
+        if is_military:
+            return 0.1
+        else:
+            return 0
 
-    def calcular_precio_final(self, precio_base: float) -> float:
-        descuento = self.estrategia_descuento.calcular_descuento(precio_base)
-        return precio_base - descuento
+class WeekdayDiscount(MovieTicketDiscountStrategy):
+    def apply_discount(self, age: int, is_military: bool, date: datetime) -> float:
+        if date.weekday() < 5:  # Monday to Friday
+            return 0.1
+        else:
+            return 0
 
+class NormalPrice(MovieTicketDiscountStrategy):
+    def apply_discount(self, age: int, is_military: bool, date: datetime) -> float:
+        return 0
 
+class MovieTicket:
+    def _init_(self, age: int, is_military: bool, date: datetime, discount_strategy: MovieTicketDiscountStrategy):
+        self.age = age
+        self.is_military = is_military
+        self.date = date
+        self.discount_strategy = discount_strategy
 
+    def get_price(self) -> float:
+        base_price = 10.0  # Base price of movie ticket
+        discount = self.discount_strategy.apply_discount(self.age, self.is_military, self.date)
+        return base_price - (base_price * discount)
 
+if _name_ == "_main_":
+    # Example usage
+    ticket1 = MovieTicket(age=3, is_military=False, date=datetime(2024, 4, 30), discount_strategy=ChildDiscount())
+    print("Ticket 1 Price:", ticket1.get_price())
 
+    ticket2 = MovieTicket(age=25, is_military=True, date=datetime(2024, 4, 30), discount_strategy=MilitaryDiscount())
+    print("Ticket 2 Price:", ticket2.get_price())
+
+    ticket3 = MovieTicket(age=30, is_military=False, date=datetime(2024, 5, 2), discount_strategy=WeekdayDiscount())
+    print("Ticket 3 Price:", ticket3.get_price())
+
+    ticket4 = MovieTicket(age=40, is_military=False, date=datetime(2024, 5, 4), discount_strategy=NormalPrice())
+    print("Ticket 4 Price:", ticket4.get_price())
