@@ -3,15 +3,13 @@ from datetime import datetime, timedelta
 from typing import Optional, Union
 
 import jwt
-from fastapi import Depends, FastAPI, Header, HTTPException, Request, status
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-from login import auth_router
-from pydantic import BaseModel
+from fastapi import Depends, FastAPI, Header, HTTPException, Request
 from schemas.user import UserSignin
 from starlette.responses import FileResponse
+from modules.routes.app import router as routes_router
 
 app = FastAPI()
-app.include_router(auth_router)
+app.include_router(routes_router, prefix="/routes")
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
