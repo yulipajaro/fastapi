@@ -1,11 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException
-from .strategy import CarRoute, BikeRoute, RouteStrategy
+from .strategy import CarRoute, BikeRoute, RouteStrategy, MotorcycleRoute
 from enum import Enum
 
 
 class Vehicle(Enum):
     CAR = "car"
     BIKE = "bike"
+    MOTORCYCLE = "motorcycle"
 
 
 def get_strategy(vehicle: Vehicle) -> RouteStrategy:
@@ -13,6 +14,8 @@ def get_strategy(vehicle: Vehicle) -> RouteStrategy:
         return CarRoute()
     elif vehicle == Vehicle.BIKE:
         return BikeRoute()
+    elif vehicle == Vehicle.MOTORCYCLE:
+        return MotorcycleRoute()
     else:
         raise HTTPException(status_code=400, detail="Invalid vehicle")
 

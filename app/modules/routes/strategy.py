@@ -23,7 +23,7 @@ class CarRoute(RouteStrategy):
         return round((destination - origin) * 0.1, 2)
 
     def get_time(self, origin: int, destination: int) -> float:
-        return round((destination - origin) * 0.5,2)
+        return round((destination - origin) * 0.5, 2)
 
 
 class BikeRoute(RouteStrategy):
@@ -34,5 +34,16 @@ class BikeRoute(RouteStrategy):
         return 0
 
     def get_time(self, origin: int, destination: int) -> float:
-        return round((destination - origin) * 2,2)
+        return round((destination - origin) * 2, 2)
+
+
+class MotorcycleRoute(RouteStrategy):
+    def get_best_route(self, origin: int, destination: int) -> dict:
+        return {"start_street": origin, "end_street": destination, "route": "Use the motorcycle lane"}
+
+    def get_cost(self, origin: int, destination: int) -> float:
+        return round((destination - origin) * 0.05, 2)
+
+    def get_time(self, origin: int, destination: int) -> float:
+        return round((destination - origin) * 0.25, 2)
 
