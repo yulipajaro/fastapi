@@ -1,10 +1,17 @@
 import os
-from typing import Union
+from datetime import datetime, timedelta
+from typing import Optional, Union
 
-from fastapi import FastAPI
+import jwt
+from fastapi import Depends, FastAPI, Header, HTTPException, Request, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from login import auth_router
+from pydantic import BaseModel
+from schemas.user import UserSignin
 from starlette.responses import FileResponse
 
 app = FastAPI()
+app.include_router(auth_router)
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
@@ -29,3 +36,52 @@ def get_example_dates():
 def get_list_nit():
     nit_path = os.path.join(current_dir, 'data', 'list_nit.json')
     return FileResponse(nit_path)
+
+
+# Clave secreta para firmar el token (¡cambia esto en producción!)
+SECRET_KEY = "mysecretkey"
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+# Función para generar un token JWT
+def create_access_token(data: dict):
+    to_encode = data.copy()
+    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    to_encode.update({"exp": expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+# Ruta para autenticación y generación de token
+@app.post("/login", status_code=200)
+def login(request: Request, credentials: UserSignin) -> dict:
+    email = credentials.email
+    password = credentials.password
+
+    # Verifica las credenciales (¡cambia esto con tu lógica de autenticación real!)
+    if email == "prueba@gmail.com" and password == "Password123!":
+        token = create_access_token({"sub": email})
+        return {"token": token}
+    else:
+        raise HTTPException(status_code=401, detail="Credenciales inválidas")
+
+
+def get_token(authorization: Optional[str] = Header(None)):
+    if authorization:
+        scheme, _, param = authorization.partition(' ')
+        if scheme.lower() == 'bearer':
+            return param
+    raise HTTPException(status_code=401, detail='Invalid credentials')
+
+
+@app.get("/hola-mundo-token")
+def hola_mundo_token(token: str = Depends(get_token)):
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        email = payload.get("sub")
+        return {"message": f"Hola, usuario con email {email}!"}
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(status_code=401, detail="Token expirado")
+    except jwt.DecodeError:
+        raise HTTPException(status_code=401, detail="Token inválido")
